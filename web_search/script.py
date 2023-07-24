@@ -4,7 +4,7 @@ import os
 
 def web_search():
     query = os.getenv('query')
-    api_key = os.getenv('api_key')
+    api_key = os.getenv('serper_key')
 
     if not query or not api_key:
         print("Error: query or api_key environment variables do not exist.")
