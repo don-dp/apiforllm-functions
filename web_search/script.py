@@ -7,7 +7,7 @@ def web_search():
     api_key = os.getenv('serper_key')
 
     if not query or not api_key:
-        print("Error: query or api_key environment variables do not exist.")
+        print("Error: query or serper_key environment variables do not exist.")
         return
 
     payload = json.dumps({
